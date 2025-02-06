@@ -40,7 +40,7 @@ data.iloc[:,:10] = data.iloc[:,:10].map(func_int)
 data = data.reset_index().rename(columns={'index': 'year'})
 data = data.drop_duplicates(subset=['year'], keep='first')
 data = data.set_index('year')
-
+print(data)
 
 agg_data = data[['10th_percentile', '20th_percentile', '30th_percentile', '40th_percentile',
       '50th_percentile(median)', '60th_percentile', '70th_percentile',
