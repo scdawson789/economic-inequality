@@ -1,1 +1,3 @@
 data/unused
+data/housing
+.idea/
