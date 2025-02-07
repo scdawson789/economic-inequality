@@ -1,0 +1,92 @@
+﻿Table with row headers in column A and column headers in rows 4 through 6,,,,,,,,,,,,,
+"Table A-4a.
+Selected Measures of Household Income Dispersion: 1967 to 2023",,,,,,,,,,,,,
+"(Income in 2023 dollars, adjusted using the C-CPI-U (2000-2023) and R-CPI-U-RS (pre-2000). Further explanation of income inequality measures is available at ""The Changing Shape of the Nation's Income Distribution: 1947-1998,"" Current Population Reports, Series P60-204. Information on confidentiality protection, sampling error, nonsampling error, and definitions is available at <https://www2.census.gov/programs-surveys/cps/techdocs/cpsmar24.pdf>)",,,,,,,,,,,,,
+Year,Measures of income dispersion,,,,,,,,,,,,
+,Household income at selected percentiles,,,,,,,,,,Household income ratios at selected percentiles,,
+,10th percentile,20th percentile,30th percentile,40th percentile,"50th percentile
+(median)",60th percentile,70th percentile,80th percentile,90th percentile,95th percentile,90th/10th,90th/50th,50th/10th
+2023,"18,980","33,000","47,910","62,200","80,610","101,000","127,300","165,300","234,900","316,100",12.38,2.91,4.25
+2022,"17,780","31,190","45,680","60,330","77,540","97,730","123,400","159,100","224,500","306,700",12.63,2.90,4.36
+2021,"17,540","31,360","45,380","61,590","79,260","100,500","126,800","167,000","237,400","320,600",13.53,2.99,4.52
+2020 1,"18,310","31,900","46,680","61,520","79,560","100,100","126,900","166,100","236,300","321,700",12.90,2.97,4.34
+2019,"18,940","33,200","47,760","63,240","81,210","102,200","129,700","168,400","237,800","319,200",12.55,2.93,4.29
+2018,"17,550","30,710","44,390","59,980","75,790","95,420","120,200","155,900","221,100","298,400",12.60,2.92,4.32
+2017 2,"17,500","30,380","42,910","57,780","74,810","94,420","119,900","154,900","222,400","298,700",12.71,2.97,4.27
+2017,"17,400","30,150","42,850","57,650","75,100","94,900","119,700","155,200","219,100","290,100",12.59,2.92,4.32
+2016,"16,950","29,890","43,230","56,780","73,520","93,230","117,200","150,700","212,400","280,500",12.53,2.89,4.34
+2015,"16,660","28,640","40,520","54,660","71,000","90,450","113,900","147,000","203,700","269,400",12.23,2.87,4.26
+2014,"15,410","26,900","38,560","51,700","67,360","85,630","108,600","140,900","197,700","259,300",12.83,2.93,4.37
+2013 3,"15,530","26,740","38,780","52,250","68,220","85,560","108,300","140,300","197,900","261,200",12.74,2.90,4.39
+2013 4,"15,790","26,610","38,270","51,170","66,130","83,400","104,400","134,800","191,000","249,500",12.10,2.89,4.19
+2012,"15,770","26,540","38,400","51,240","65,740","83,220","103,900","134,100","188,100","246,300",11.93,2.86,4.17
+2011,"15,760","26,610","38,450","50,600","65,750","82,010","103,800","133,400","188,600","244,300",11.97,2.87,4.17
+2010 5,"16,060","27,090","38,500","51,460","66,730","83,290","105,600","135,500","187,900","244,400",11.70,2.82,4.15
+2009 6,"16,640","28,080","40,030","52,920","68,340","84,850","106,600","137,300","189,000","247,100",11.36,2.76,4.11
+2008,"16,630","28,320","40,550","53,330","68,780","85,770","107,900","137,100","189,100","246,100",11.37,2.75,4.14
+2007,"17,240","28,760","41,960","55,420","71,210","87,890","110,600","141,800","192,800","250,900",11.18,2.71,4.13
+2006,"17,450","29,130","42,040","54,920","70,080","87,230","109,200","141,100","193,400","253,000",11.08,2.76,4.02
+2005,"16,890","28,690","40,570","53,860","69,310","86,260","107,700","137,200","188,600","248,300",11.17,2.72,4.10
+2004 7,"16,790","28,460","40,020","53,380","68,250","85,020","106,700","135,500","186,100","241,900",11.08,2.73,4.07
+2003,"16,620","28,380","40,130","53,650","68,350","85,920","107,700","137,100","186,500","243,200",11.22,2.73,4.11
+2002,"17,110","28,860","40,490","53,760","68,310","85,630","107,200","135,300","183,800","241,600",10.75,2.69,3.99
+2001,"17,430","29,310","41,150","54,330","68,870","86,440","107,700","136,200","185,300","245,400",10.63,2.69,3.95
+2000 8,"17,650","29,880","41,940","55,030","70,020","87,010","108,400","136,400","186,800","242,200",10.58,2.67,3.97
+1999 9,"17,850","29,560","42,020","55,070","70,210","86,920","108,000","136,700","185,900","245,000",10.42,2.65,3.93
+1998,"17,080","28,380","41,050","53,540","68,470","85,120","105,500","132,100","178,400","232,800",10.44,2.61,4.01
+1997,"16,450","27,490","39,270","52,120","66,050","82,100","101,600","127,600","174,300","225,900",10.60,2.64,4.02
+1996,"16,240","26,920","38,290","50,610","64,710","80,230","99,330","124,000","167,800","217,900",10.33,2.59,3.98
+1995 10,"16,240","26,950","37,690","50,360","63,770","78,600","97,050","121,900","164,100","211,500",10.11,2.57,3.93
+1994 11,"15,380","25,720","36,640","48,270","61,800","76,810","95,820","120,400","162,600","210,400",10.57,2.63,4.02
+1993 12,"15,040","25,380","36,400","48,310","61,150","75,930","94,450","118,000","160,000","204,800",10.64,2.62,4.06
+1992 13,"15,040","25,270","36,210","48,420","61,450","76,020","93,540","116,400","155,600","198,600",10.34,2.53,4.08
+1991,"15,270","25,900","37,190","49,360","61,960","76,250","93,400","116,700","156,100","198,300",10.22,2.52,4.06
+1990,"15,600","26,640","38,370","50,440","63,830","77,160","95,030","117,700","158,000","202,000",10.12,2.47,4.09
+1989,"16,090","27,040","38,700","51,410","64,610","79,010","96,700","120,100","160,800","205,100",9.99,2.49,4.01
+1988,"15,320","26,560","37,800","50,170","63,530","78,180","95,010","118,100","156,300","199,800",10.21,2.46,4.15
+1987 14,"15,090","26,130","37,590","49,600","63,060","77,430","94,490","117,000","154,400","195,800",10.23,2.45,4.18
+1986,"14,960","25,630","37,300","49,030","62,280","76,090","92,800","115,000","151,000","192,900",10.09,2.42,4.16
+1985 15,"14,990","25,280","36,000","47,560","60,050","73,670","89,500","110,800","145,300","183,100",9.69,2.42,4.01
+1984 16,"14,980","24,980","35,490","46,740","58,930","72,020","87,980","108,800","143,100","180,100",9.55,2.43,3.93
+1983,"14,400","24,510","34,500","45,580","57,210","69,950","85,320","105,700","138,400","173,900",9.61,2.40,4.00
+1982,"14,440","23,970","34,320","45,600","57,570","69,670","84,740","103,900","137,000","171,500",9.48,2.38,3.99
+1981,"14,710","24,290","34,520","45,400","57,730","70,220","84,990","103,800","135,600","167,100",9.22,2.35,3.92
+1980,"14,920","24,800","35,300","46,500","58,720","71,290","85,690","104,400","135,600","168,000",9.09,2.31,3.94
+1979 17,"15,110","25,770","36,820","47,860","60,610","73,640","88,360","106,800","138,200","172,500",9.14,2.28,4.01
+1978,"15,390","25,470","36,300","48,150","60,720","72,860","87,690","106,000","137,000","169,500",8.90,2.26,3.95
+1977,"15,080","24,690","35,190","46,510","58,450","70,890","85,400","103,400","131,800","163,600",8.74,2.25,3.89
+1976 18,"14,920","24,780","35,390","46,170","58,160","70,330","83,690","101,200","129,800","160,500",8.70,2.23,3.90
+1975 19,"14,830","24,230","34,610","45,480","57,180","68,720","82,220","98,670","126,500","155,700",8.53,2.22,3.84
+"1974 19, 20","15,260","25,520","36,290","47,330","58,780","69,940","84,000","101,500","130,900","160,700",8.58,2.23,3.85
+1973,"15,140","25,350","36,740","48,750","60,610","72,130","86,490","103,900","134,100","166,900",8.86,2.20,4.02
+1972 21,"14,430","24,780","36,100","47,730","59,330","70,540","83,910","101,000","129,700","162,500",8.99,2.19,4.11
+1971 22,"13,580","24,030","34,780","45,810","57,090","67,410","79,710","96,120","123,300","152,600",9.08,2.16,4.21
+1970,"13,360","24,320","35,510","46,580","57,580","67,750","79,930","96,660","123,100","152,800",9.22,2.13,4.32
+1969,"13,660","24,720","35,960","47,430","58,010","68,600","80,210","96,110","122,000","150,700",8.93,2.10,4.25
+1968,"13,290","23,950","35,320","45,410","55,810","65,080","76,400","91,450","115,300","143,100",8.68,2.07,4.20
+1967 23,"12,210","22,480","33,590","43,840","53,530","62,220","74,720","88,720","112,700","142,400",9.23,2.11,4.38
+1 Implementation of 2020 Census-based population controls.,,,,,,,,,,,,,
+2 Estimates reflect the implementation of an updated processing system and should be used to make comparisons to 2018 and subsequent years.,,,,,,,,,,,,,
+"3 The 2014 CPS ASEC included redesigned questions for income and health insurance coverage. All of the approximately 98,000 addresses were eligible to receive the redesigned set of health insurance coverage questions. The redesigned income questions were implemented to a subsample of these 98,000 addresses using a probability split panel design. Approximately 68,000 addresses were eligible to receive a set of income questions similar to those used in the 2013 CPS ASEC and the remaining 30,000 addresses were eligible to receive the redesigned income questions. The source of these 2013 estimates is the portion of the CPS ASEC sample that received the redesigned income questions, approximately 30,000 addresses.",,,,,,,,,,,,,
+"4 The source of these 2013 estimates is the portion of the CPS ASEC sample that received the income questions consistent with the 2013 CPS ASEC, approximately 68,000 addresses.",,,,,,,,,,,,,
+"5 Implementation of 2010 Census-based population controls. Beginning with 2010, standard errors in this table were calculated using replicate weights. Before 2010, standard errors were calculated using the generalized variance function.",,,,,,,,,,,,,
+"6 Beginning with 2009 income data, the Census Bureau expanded the upper income intervals used to calculate medians to $250,000 or more. Medians falling in the upper open-ended interval are plugged with ""$250,000."" Before 2009, the upper open-ended interval was $100,000 and a plug of ""$100,000"" was used.",,,,,,,,,,,,,
+7 Data have been revised to reflect a correction to the weights in the 2005 CPS ASEC.,,,,,,,,,,,,,
+"8 Implementation of a 28,000-household sample expansion.",,,,,,,,,,,,,
+9 Implementation of 2000 Census-based population controls.,,,,,,,,,,,,,
+"10 Full implementation of 1990 Census-based sample design and metropolitan definitions, 7,000-household sample reduction, and revised editing of responses on race.",,,,,,,,,,,,,
+11 Introduction of 1990 Census-based sample design.,,,,,,,,,,,,,
+"12 Data collection method changed from paper and pencil to computer-assisted interviewing. In addition, the 1994 CPS ASEC was revised to allow for the coding of different income amounts on selected questionnaire items. Limits either increased or decreased in the following categories: earnings limits increased to $999,999; Social Security limits increased to $49,999; Supplemental Security Income and public assistance limits increased to $24,999; veterans' benefits limits increased to $99,999; child support and alimony limits decreased to $49,999.",,,,,,,,,,,,,
+13 Implementation of 1990 Census-based population controls.,,,,,,,,,,,,,
+14 Implementation of a new CPS ASEC processing system.,,,,,,,,,,,,,
+"15 Recording of amounts for earnings from longest job increased to $299,999. Full implementation of 1980 Census-based sample design.",,,,,,,,,,,,,
+16 Implementation of Hispanic population weighting controls and introduction of 1980 Census-based sample design.,,,,,,,,,,,,,
+17 Implementation of 1980 Census-based population controls. Questionnaire expanded to show 27 possible values from 51 possible sources of income.,,,,,,,,,,,,,
+"18 First year medians were derived using both Pareto and linear interpolation. Before this year, all medians were derived using linear interpolation.",,,,,,,,,,,,,
+"19 Some of these estimates were derived using Pareto interpolation and may differ from published data, which were derived using linear interpolation.",,,,,,,,,,,,,
+20 Implementation of a new CPS ASEC processing system. Questionnaire expanded to ask 11 income questions.,,,,,,,,,,,,,
+21 Full implementation of 1970 Census-based sample design.,,,,,,,,,,,,,
+22 Introduction of 1970 Census-based sample design and population controls.,,,,,,,,,,,,,
+23 Implementation of a new CPS ASEC processing system.,,,,,,,,,,,,,
+"Note: Median income estimates are currently calculated using linear interpolation and $2,500 intervals. Between 1976 and 1987, some median income estimates were also calculated using Pareto interpolation. More details on the different methods used can be found in ""Money Income and Poverty Status in the United States: 1988 (Advance Report)"" at <https://www2.census.gov/library/publications/1989/demographics/p60-166.pdf>. Inflation-adjusted estimates may differ slightly from other published data due to rounding. Margins of error are available via email at <sehsd.isb.list@census.gov>.",,,,,,,,,,,,,
+"Source: U.S. Census Bureau, Current Population Survey, 1968 to 2024 Annual Social and Economic Supplements (CPS ASEC).",,,,,,,,,,,,,
