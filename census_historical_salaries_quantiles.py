@@ -63,7 +63,7 @@ for col in range(len(agg_data.columns)-1):
     result.iloc[:, 1:] = result.iloc[:, 1:].map(lambda x: round(x,6))
 
     labels = ['20th_div_10th', '30th_div_20th', '40th_div_30th', '50th_div_40th', '60th_div_50th', '70th_div_60th', '80th_div_70th', '90th_div_80th', '95th_div_90th']
-    fig, ax = plt.subplots(nrows=3, ncols=1, figsize=(14, 8))
+    fig, ax = plt.subplots(nrows=2, ncols=1, figsize=(14, 8))
     fig.tight_layout(pad=3.0)
 
     x, y = labels[col].split("_div_")
@@ -72,7 +72,6 @@ for col in range(len(agg_data.columns)-1):
     ax[0].set_xlabel("Year")
     ax[0].set_xticks(range(len(result.min_val)))
     ax[0].set_xticklabels(bin_labels, fontsize=16)
-    #ax[0].set_ylim(ymin=1.1, ymax=1.9)
     ax[0].set_ylabel("Ratio between: " + x + " and " + y + " pct")
     ax[0].plot(result.years, result.mean_val, label=labels[col], color='slategray')
     ax[0].fill_between(x=result.years.to_list(), y1=result.min_val.to_list(), y2=result.max_val.to_list(),color=mpl.colors.to_rgba('brown', 0.15) )
@@ -82,16 +81,17 @@ for col in range(len(agg_data.columns)-1):
     ax[1].set_ylabel("Ratio between " + x + " and " + y + " pct")
     ax[1].plot(temp_df.index, temp_df[col_name], label="Ratio " + x + "/" + y)
 
-    ax[2].set_title("Decade Ratio Variability: standard deviation: ")
-    ax[2].set_xlabel("Year")
-    ax[2].set_xticks(range(len(result.std_dev)))
-    ax[2].set_xticklabels(bin_labels, fontsize=16)
-    ax[2].set_ylim(ymin=0, ymax=.08)
-    ax[2].set_ylabel("Std Deviation")
-    ax[2].plot(result.years, result.std_dev, color='slategray' )
-
     plt.show()
 
+label_data = agg_data.loc[[1967, 2023]]
+
+change_df = label_data.transpose().astype('int')
+print(change_df)
+change_df.columns = ['1967', '2023']
+
+change_df = change_df.assign(pct_chg = round((change_df['2023'] - change_df['1967'])/ change_df['1967'] *100, 2))
+print(change_df)
+change_df.columns = ['1967', '2023', 'pct_chg']
 
 fig, ax = plt.subplots(ncols=1, nrows=1, figsize=(12,8))
 
@@ -102,10 +102,15 @@ ax.plot(agg_data.index, agg_data['10th_percentile'], color='blue', label='10th p
 ax.plot(agg_data.index, agg_data['20th_percentile'], color='pink', label='20th percentile')
 ax.plot(agg_data.index, agg_data['30th_percentile'], color='green', label='30th percentile')
 ax.plot(agg_data.index, agg_data['40th_percentile'], color='orange', label='40th percentile')
+ax.plot(agg_data.index, agg_data['50th_percentile(median)'], color='cyan', label='50th percentile')
 ax.plot(agg_data.index, agg_data['60th_percentile'], color='slategray', label='60th percentile')
 ax.plot(agg_data.index, agg_data['70th_percentile'], color='yellow', label='70th percentile')
 ax.plot(agg_data.index, agg_data['80th_percentile'], color='purple', label='80th percentile')
 ax.plot(agg_data.index, agg_data['90th_percentile'], color='brown', label='90th percentile')
 ax.plot(agg_data.index, agg_data['95th_percentile'], color='red', label='95th percentile')
+ax.spines[['right', 'top']].set_visible(False)
+
+for i in range(len(change_df)):
+    plt.annotate(change_df['pct_chg'][i], (2023, change_df['2023'][i]))
 ax.legend(loc='best')
 plt.show()

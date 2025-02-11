@@ -1,0 +1,26 @@
+<a href='https://www.macrotrends.net/global-metrics/countries/USA/united-states/population-growth-rate'>U.S. Population Growth Rate 1950-2025</a>
+<a href='https://www.macrotrends.net/global-metrics/countries/USA/united-states/population-growth-rate'>Macrotrends</a>
+
+EPI Data:
+How to cite
+Users may freely cite data obtained here, crediting as follows: the Economic Policy Institute’s State of Working America Data Library.
+
+The suggested academic citation is: Economic Policy Institute, State of Working America Data Library, “[Name of series],” 2024. Researchers are also encouraged to acknowledge the statistical agencies that originally produced the data, listed under the tables.
+
+Reporters and researchers seeking context for this data beyond that provided in the glossary and methodology are encouraged to contact news@epi.org.
+
+Documentation
+Data on the labor force in the “Employment” section are compiled from EPI analysis of basic monthly Current Population Survey microdata. Data reflect 12-month moving averages as of the latest month of data.
+
+For detailed documentation of our wages and benefit calculations, see methodology.
+
+Data by Wage Percentile
+NA: Data for these 95th percentile values are currently not available because of issues with significant shares of the population facing BLS’ top-code value for weekly wages. EPI is exploring methodological changes to overcome this hurdle and obtain reliable estimates for the 95th percentile.
+
+Wages are adjusted into 2023 dollars by the CPI-U-RS.
+
+Population sample: Wage and salary workers ages 16 and older
+
+Demographic cuts: View race cut definitions
+
+https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-income-inequality.html
