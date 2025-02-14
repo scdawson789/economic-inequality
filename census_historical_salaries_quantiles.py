@@ -4,17 +4,27 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 
+sns.set()
+
+
+def calculate_cost_living(start, multiple, length):
+    values = [start]
+    for i in range(1, length):
+        values.append(round(values[-1] * multiple,3))
+    print(values)
+    return values
+
+
 def get_percentile_change(df):
     temp = df.columns
     temp_df = df.copy()
     new_col_name1 = 'ratio_'+ str(temp[0])+"_" + str(temp[1])
     temp_df[new_col_name1] = df[temp[1]]/df[temp[0]]
-
     temp_df = temp_df.sort_index()
 
+    print(temp_df)
     return temp_df
 
-sns.set()
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.expand_frame_repr', False)
@@ -44,11 +54,17 @@ data = data.set_index('year')
 agg_data = data[['10th_percentile', '20th_percentile', '30th_percentile', '40th_percentile',
       '50th_percentile(median)', '60th_percentile', '70th_percentile',
       '80th_percentile', '90th_percentile', '95th_percentile']].copy()
+col_vals = agg_data.columns
+col_names = [col.split("_")[0] for col in col_vals]
+
+agg_data = agg_data.sort_index()
+
 
 for col in range(len(agg_data.columns)-1):
 
     bin_yrs = [1966, 1970, 1980, 1990, 2000, 2010, 2020, 2024]
     bin_labels = ['1967 - 1969', '1970 - 1979', '1980 - 1989', '1990 - 1999', '2000 - 2009', '2010 - 2019', '2020 - 2023']
+
 
     temp_df = get_percentile_change(agg_data.iloc[:,col: col+2])
     list_cols = [col for col in temp_df.columns]
@@ -86,31 +102,28 @@ for col in range(len(agg_data.columns)-1):
 label_data = agg_data.loc[[1967, 2023]]
 
 change_df = label_data.transpose().astype('int')
-print(change_df)
+
 change_df.columns = ['1967', '2023']
 
 change_df = change_df.assign(pct_chg = round((change_df['2023'] - change_df['1967'])/ change_df['1967'] *100, 2))
-print(change_df)
+
 change_df.columns = ['1967', '2023', 'pct_chg']
 
 fig, ax = plt.subplots(ncols=1, nrows=1, figsize=(12,8))
 
-ax.set_title("Income by Quantile")
+ax.set_title("Income by Quantile", fontsize=20)
 ax.set_xlabel(" Year")
 ax.set_ylabel("Income in by Quantile")
-ax.plot(agg_data.index, agg_data['10th_percentile'], color='blue', label='10th percentile')
-ax.plot(agg_data.index, agg_data['20th_percentile'], color='pink', label='20th percentile')
-ax.plot(agg_data.index, agg_data['30th_percentile'], color='green', label='30th percentile')
-ax.plot(agg_data.index, agg_data['40th_percentile'], color='orange', label='40th percentile')
-ax.plot(agg_data.index, agg_data['50th_percentile(median)'], color='cyan', label='50th percentile')
-ax.plot(agg_data.index, agg_data['60th_percentile'], color='slategray', label='60th percentile')
-ax.plot(agg_data.index, agg_data['70th_percentile'], color='yellow', label='70th percentile')
-ax.plot(agg_data.index, agg_data['80th_percentile'], color='purple', label='80th percentile')
-ax.plot(agg_data.index, agg_data['90th_percentile'], color='brown', label='90th percentile')
-ax.plot(agg_data.index, agg_data['95th_percentile'], color='red', label='95th percentile')
+ax.set_ylim([0,350000])
+colors = ['red', 'lightsalmon', 'darkorange', 'yellow', 'gold', 'lime', 'forestgreen', 'lightsteelblue', 'blue', 'darkorchid']
+
+for col in range(len(agg_data.columns)):
+    ax.plot(agg_data.index, agg_data[agg_data.columns[col]], color=colors[col], label=agg_data.columns[col])
+
 ax.spines[['right', 'top']].set_visible(False)
 
+plt.annotate(text="Percent increase", xy=(2017, 340000), xytext=(2017, 340000))
 for i in range(len(change_df)):
-    plt.annotate(change_df['pct_chg'][i], (2023, change_df['2023'][i]))
+    plt.annotate(change_df.iloc[i,2], (2023, change_df.iloc[i,1]))
 ax.legend(loc='best')
 plt.show()

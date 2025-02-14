@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import math
 
-#sns.set()
+sns.set()
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.expand_frame_repr', False)
