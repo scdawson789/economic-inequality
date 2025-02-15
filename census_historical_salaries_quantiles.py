@@ -32,7 +32,9 @@ pd.set_option('display.expand_frame_repr', False)
 rows_to_skip = list(range(0,5)) + list(range(65,90,1))
 
 data = pd.read_csv("data\\Census_historcal_salaries_quantiles.csv", index_col=[0], skiprows=rows_to_skip,header=[0])
-
+citation_text= """Source: U.S. Census Bureau, Current Population Survey, 1968 to 2024 Annual Social and Economic Supplements (CPS ASEC).
+Note from US CB: Median income estimates are currently calculated using linear interpolation and $2,500 intervals. 
+Between 1976 and 1987, some median income estimates were also calculated using Pareto interpolation."""
 
 # replace erroneous characters
 rows = [ int(row.split()[0]) for row in data.index]
@@ -79,23 +81,19 @@ for col in range(len(agg_data.columns)-1):
     result.iloc[:, 1:] = result.iloc[:, 1:].map(lambda x: round(x,6))
 
     labels = ['20th_div_10th', '30th_div_20th', '40th_div_30th', '50th_div_40th', '60th_div_50th', '70th_div_60th', '80th_div_70th', '90th_div_80th', '95th_div_90th']
-    fig, ax = plt.subplots(nrows=2, ncols=1, figsize=(14, 8))
+    fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(14, 8))
     fig.tight_layout(pad=3.0)
 
     x, y = labels[col].split("_div_")
     plt.suptitle("Ratio between " + x + " and " + y + " Percentiles")
-    ax[0].set_title("Decade Data: Max, Min, Mean")
-    ax[0].set_xlabel("Year")
-    ax[0].set_xticks(range(len(result.min_val)))
-    ax[0].set_xticklabels(bin_labels, fontsize=16)
-    ax[0].set_ylabel("Ratio between: " + x + " and " + y + " pct")
-    ax[0].plot(result.years, result.mean_val, label=labels[col], color='slategray')
-    ax[0].fill_between(x=result.years.to_list(), y1=result.min_val.to_list(), y2=result.max_val.to_list(),color=mpl.colors.to_rgba('brown', 0.15) )
+    ax.set_title("Decade Data: Max, Min, Mean")
+    ax.set_xlabel("Year")
+    ax.set_xticks(range(len(result.min_val)))
+    ax.set_xticklabels(bin_labels, fontsize=16)
+    ax.set_ylabel("Ratio between: " + x + " and " + y + " pct")
+    ax.plot(result.years, result.mean_val, label=labels[col], color='slategray')
+    ax.fill_between(x=result.years.to_list(), y1=result.min_val.to_list(), y2=result.max_val.to_list(),color=mpl.colors.to_rgba('brown', 0.15) )
 
-    ax[1].set_title("Annual Data")
-    ax[1].set_xlabel("Year")
-    ax[1].set_ylabel("Ratio between " + x + " and " + y + " pct")
-    ax[1].plot(temp_df.index, temp_df[col_name], label="Ratio " + x + "/" + y)
 
     plt.show()
 
@@ -125,5 +123,8 @@ ax.spines[['right', 'top']].set_visible(False)
 plt.annotate(text="Percent increase", xy=(2017, 340000), xytext=(2017, 340000))
 for i in range(len(change_df)):
     plt.annotate(change_df.iloc[i,2], (2023, change_df.iloc[i,1]))
+
+plt.figtext(.5, .05, citation_text, ha='center')
+fig.tight_layout(rect=[0, .1, 1, 1])
 ax.legend(loc='best')
 plt.show()

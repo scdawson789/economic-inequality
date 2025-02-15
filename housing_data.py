@@ -6,6 +6,10 @@ import math
 
 sns.set()
 
+citation_text = """U.S. Census Bureau, Median Family Income in the US - https://fred.stlouisfed.org/series/MEFAINUSA646N, February 15, 2025.
+U.S. CB and HUD, Median Sales Price of Houses Sold for the United States - https://fred.stlouisfed.org/series/MSPUS, February 15, 2025."
+Freddie Mac, 30-Year Fixed Rate Mortgage Avg in US - https://fred.stlouisfed.org/series/MORTGAGE30US, February 15, 2025."""
+
 pd.set_option('display.max_rows', None)
 pd.set_option('display.expand_frame_repr', False)
 
@@ -58,14 +62,24 @@ plt.suptitle("Median Sale Price of US Home to Median Family Income")
 ax.set_xlabel("Year")
 ax.set_ylabel("Median Sale Price")
 ax.plot(final_df.index, final_df.med_home_to_med_income, color='blue', label='Median Home price to Median Family Income')
+
+plt.figtext( .5, .1, citation_text, ha='center', fontsize=10, style='italic')
+
+fig.tight_layout(rect=[0,.15,1,1])
 plt.legend(loc='best')
 plt.show()
 print(full_df)
 
 fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(10,8))
-plt.suptitle("30-year Mortgage payments as Pct of Income")
+plt.suptitle("30-year Mortgage payments as Pct of Income", fontsize=17)
 ax.set_xlabel("Year")
 ax.set_ylabel("Mortgage payments as pct of income")
 ax.plot(full_df.index, full_df.pymt_pct_income, color='blue', label='Median home payment (med price + interest) as pct of income')
+
+plt.figtext( .5, .1, citation_text, ha='center', fontsize=10, style='italic')
+
+fig.tight_layout(rect=[0,.15,1,1])
+
 plt.legend(loc='best')
 plt.show()
+
