@@ -32,6 +32,7 @@ pd.set_option('display.expand_frame_repr', False)
 rows_to_skip = list(range(0,5)) + list(range(65,90,1))
 
 data = pd.read_csv("data\\Census_historcal_salaries_quantiles.csv", index_col=[0], skiprows=rows_to_skip,header=[0])
+
 citation_text= """Source: U.S. Census Bureau, Current Population Survey, 1968 to 2024 Annual Social and Economic Supplements (CPS ASEC).
 Note from US CB: Median income estimates are currently calculated using linear interpolation and $2,500 intervals. 
 Between 1976 and 1987, some median income estimates were also calculated using Pareto interpolation."""
