@@ -44,13 +44,14 @@ full_df = full_df.dropna(axis=0, how='any')
 # Get the monthly mortgage rate
 full_df['mortgage_rate'] = full_df['mortgage_rate']/100/12
 
+# Calculate mortgage payments
 top_func = lambda x: x*(1 + x)**360
 bottom_func = lambda x: (1 + x)**360 - 1
-full_df['top_funct'] = full_df['mortgage_rate'].map(top_func)
-full_df['bottom_funct'] = full_df['mortgage_rate'].map(bottom_func)
-full_df['median_home_pymnt'] = (full_df['median_home_price'] * full_df['top_funct']) / full_df['bottom_funct']
+full_df['numerator'] = full_df['mortgage_rate'].map(top_func)
+full_df['denominator'] = full_df['mortgage_rate'].map(bottom_func)
+full_df['median_home_pymnt'] = (full_df['median_home_price'] * full_df['numerator']) / full_df['denominator']
 
-full_df = full_df.drop(['top_funct', 'bottom_funct'], axis=1)
+full_df = full_df.drop(['numerator', 'denominator'], axis=1)
 
 #multiple monthly payment to get annual payment and divide by median family income
 full_df['pymt_pct_income'] = full_df['median_home_pymnt']*12/ full_df['median_family_income']

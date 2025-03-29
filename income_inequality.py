@@ -28,3 +28,4 @@ cost_living = 1.0403
 median_family['cost_of_living'] = calculate_cost_living(start, cost_living, len(median_family))
 
 print(median_family)
+
