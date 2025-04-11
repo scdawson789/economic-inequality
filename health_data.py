@@ -13,6 +13,7 @@ def calculate_difference(start, values):
         vals.append(temp)
     return vals
 
+
 # Read in data
 data = pd.read_csv("data\\EPI Data Library - Health insurance coverage.csv", header=0, index_col=[0])
 health_premiums = pd.read_csv("data\\health_premiums.csv", header=0, skiprows=[0], index_col='Year')
@@ -25,10 +26,24 @@ health_premiums['cost_shift'] = health_premiums['diff'].cumsum().shift(1).fillna
 
 health_premiums.drop('change', axis=1, inplace=True)
 
-print(health_premiums)
+# Median family income
+median_family = pd.read_csv("data\\median_family_income_fred.csv", index_col=[0], header=0)
+median_family.index = pd.to_datetime(median_family.index)
+median_family = median_family.rename(columns={'MEFAINUSA646N': "median_family_income"})
+median_family.index = median_family.index.year
+
+#health_premiums = health_premiums.join(median_family, how='inner')
+
+median_personal = pd.read_csv("data\\median_personal_income_US_fred.csv", index_col=[0], header=0)
+median_personal.index = pd.to_datetime(median_personal.index)
+median_personal = median_personal.rename(columns={'MEPAINUSA646N': 'median_personal_income'})
+health_premiums2 = health_premiums.join(median_personal, how='inner')
+
+
 
 citation_text = "Source: Economic Policy Institute, State of Working America Data Library, “[Health insurance coverage],” 2024."
 citation_text2 = 'https://www.statista.com/statistics/654617/health-premiums-for-single-employee-coverage-us/'
+citation_text3 = "U.S. Census Bureau, Median Family Income in the US - https://fred.stlouisfed.org/series/MEFAINUSA646N, February 15, 2025."
 
 # remove percentage signs and convert to float
 clean_funct = lambda x: float(x.replace("%", ""))
@@ -84,3 +99,4 @@ fig = go.Figure(go.Waterfall(measure=health_premiums['Cost'], x=health_premiums.
 
 fig.update_layout(title="Annual Health Insurance Premium increases", showlegend=False)
 fig.show()
+

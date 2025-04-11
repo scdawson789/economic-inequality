@@ -1,0 +1,207 @@
+﻿"Cost Weights based on Relative importance of components in the Consumer Price Indexes: U.S. city average, December 2024",,,,
+Item Code,Item Title,"CPI-U Cost Weight, 202412","CPI-U Index Level, 202412","CPI-U Relative Importance, 202412"
+SA0,All items,9635100000000,315.605,100.000
+SEAA01,"Men's suits, sport coats, and outerwear",8478888000,92.846,0.088
+SEAA02,"Men's underwear, nightwear, swimwear, and accessories",13489140000,178.370,0.140
+SEAA03,Men's shirts and sweaters,14356299000,78.498,0.149
+SEAA04,Men's pants and shorts,12814683000,132.729,0.133
+SEAA09,Unsampled men's apparel,1445265000,,0.015
+SEAB,Boys' apparel,12332928000,115.121,0.128
+SEAC01,Women's outerwear,7322676000,98.776,0.076
+SEAC02,Women's dresses,12043875000,100.280,0.125
+SEAC03,Women's suits and separates,33433797000,71.196,0.347
+SEAC04,"Women's underwear, nightwear, swimwear, and accessories",29001651000,113.258,0.301
+SEAC09,Unsampled women's apparel,1059861000,,0.011
+SEAD,Girls' apparel,10309557000,97.049,0.107
+SEAE01,Men's footwear,18884796000,147.829,0.196
+SEAE02,Boys' and girls' footwear,10984014000,164.996,0.114
+SEAE03,Women's footwear,25725717000,129.674,0.267
+SEAF,Infants' and toddlers' apparel,9827802000,121.478,0.102
+SEAG01,Watches,4046742000,161.583,0.042
+SEAG02,Jewelry,13200087000,190.652,0.137
+SEEA,Educational books and supplies,4046742000,750.733,0.042
+SEEB01,College tuition and fees,127568724000,951.607,1.324
+SEEB02,Elementary and high school tuition and fees,37384188000,1050.289,0.388
+SEEB03,Day care and preschool,69758124000,376.669,0.724
+SEEB04,Technical and business school tuition and fees,3757689000,276.974,0.039
+SEEB09,"Unsampled tuition, other school fees, and childcare",6359166000,,0.066
+SEEC01,Postage,5010252000,391.940,0.052
+SEEC02,Delivery services,192702000,441.164,0.002
+SEED03,Wireless telephone services,123425631000,46.995,1.281
+SEED04,Residential telephone services,16283319000,155.861,0.169
+SEEE01,"Computers, peripherals, and smart home assistants",25243962000,33.942,0.262
+SEEE02,Computer software and accessories,2601477000,22.721,0.027
+SEEE03,Internet services and electronic information providers,89221026000,83.974,0.926
+SEEE04,"Telephone hardware, calculators, and other consumer information items",40563771000,7.595,0.421
+SEEE09,Unsampled information and information processing,867159000,,0.009
+SEFA01,Flour and prepared flour mixes,2794179000,314.588,0.029
+SEFA02,Breakfast cereal,14259948000,280.205,0.148
+SEFA03,"Rice, pasta, cornmeal",15801564000,294.160,0.164
+SEFB01,Bread,13681842000,240.406,0.142
+SEFB02,"Fresh biscuits, rolls, muffins",13007385000,236.629,0.135
+SEFB03,"Cakes, cupcakes, and cookies",20522763000,374.421,0.213
+SEFB04,Other bakery products,26881929000,351.671,0.279
+SEFC01,Uncooked ground beef,19366551000,370.833,0.201
+SEFC02,Uncooked beef roasts,5395656000,353.491,0.056
+SEFC03,Uncooked beef steaks,12332928000,288.654,0.128
+SEFC04,Uncooked other beef and veal,5781060000,355.234,0.060
+SEFD01,"Bacon, breakfast sausage, and related products",9827802000,200.657,0.102
+SEFD02,Ham,4239444000,247.219,0.044
+SEFD03,Pork chops,4817550000,247.681,0.050
+SEFD04,"Other pork including roasts, steaks, and ribs",8864292000,160.426,0.092
+SEFE,Other meats,17921286000,289.737,0.186
+SEFF01,Chicken,20811816000,197.427,0.216
+SEFF02,Other uncooked poultry including turkey,6937272000,200.262,0.072
+SEFG01,Fresh fish and seafood,13489140000,218.224,0.140
+SEFG02,Processed fish and seafood,9827802000,172.992,0.102
+SEFH,Eggs,16572372000,389.077,0.172
+SEFJ01,Milk,19270200000,180.093,0.200
+SEFJ02,Cheese and related products,24569505000,266.271,0.255
+SEFJ03,Ice cream and related products,12718332000,275.664,0.132
+SEFJ04,Other dairy and related products,14838054000,191.020,0.154
+SEFK01,Apples,7708080000,343.966,0.080
+SEFK02,Bananas,10502259000,205.690,0.109
+SEFK03,Citrus fruits,6070113000,290.004,0.063
+SEFK04,Other fresh fruits,29868810000,146.008,0.310
+SEFL01,Potatoes,7900782000,405.794,0.082
+SEFL02,Lettuce,6840921000,409.518,0.071
+SEFL03,Tomatoes,9056994000,368.274,0.094
+SEFL04,Other fresh vegetables,29772459000,385.639,0.309
+SEFM01,Canned fruits and vegetables,8478888000,212.883,0.088
+SEFM02,Frozen fruits and vegetables,6455517000,181.923,0.067
+SEFM03,Other processed fruits and vegetables including dried,6262815000,193.164,0.065
+SEFN01,Carbonated drinks,32855691000,224.217,0.341
+SEFN02,Frozen noncarbonated juices and drinks,289053000,265.293,0.003
+SEFN03,Nonfrozen noncarbonated juices and drinks,27652737000,157.246,0.287
+SEFP01,Coffee,12911034000,239.449,0.134
+SEFP02,Other beverage materials including tea,12621981000,160.980,0.131
+SEFR01,Sugar and sugar substitutes,2697828000,266.033,0.028
+SEFR02,Candy and chewing gum,22257081000,201.153,0.231
+SEFR03,Other sweets,7129974000,194.446,0.074
+SEFS01,Butter and margarine,5299305000,275.740,0.055
+SEFS02,Salad dressing,6359166000,173.406,0.066
+SEFS03,Other fats and oils including peanut butter,12429279000,224.550,0.129
+SEFT01,Soups,10116855000,306.049,0.105
+SEFT02,Frozen and freeze dried prepared foods,26881929000,214.095,0.279
+SEFT03,Snacks,35168115000,305.149,0.365
+SEFT04,"Spices, seasonings, condiments, sauces",36902433000,309.834,0.383
+SEFT05,Baby food and formula,5781060000,225.580,0.060
+SEFT06,Other miscellaneous foods,54341964000,171.231,0.564
+SEFV01,Full service meals and snacks,234518334000,230.095,2.434
+SEFV02,Limited service meals and snacks,274118595000,246.692,2.845
+SEFV03,Food at employee sites and schools,6937272000,206.304,0.072
+SEFV04,Food from vending machines and mobile vendors,5299305000,233.590,0.055
+SEFV05,Other food away from home,23220591000,249.536,0.241
+SEFW01,"Beer, ale, and other malt beverages at home",14838054000,276.617,0.154
+SEFW02,Distilled spirits at home,9924153000,209.200,0.103
+SEFW03,Wine at home,18499392000,180.737,0.192
+SEFX,Alcoholic beverages away from home,37287837000,434.348,0.387
+SEGA01,Cigarettes,34782711000,663.574,0.361
+SEGA02,Tobacco products other than cigarettes,11176716000,347.244,0.116
+SEGA09,Unsampled tobacco and smoking products,578106000,,0.006
+SEGB01,"Hair, dental, shaving, and miscellaneous personal care products",27941790000,121.154,0.290
+SEGB02,"Cosmetics, perfume, bath, nail preparations and implements",33722850000,187.819,0.350
+SEGB09,Unsampled personal care products,867159000,,0.009
+SEGC,Personal care services,63495309000,350.024,0.659
+SEGD01,Legal services,33048393000,457.198,0.343
+SEGD02,Funeral expenses,13489140000,399.098,0.140
+SEGD03,Laundry and dry cleaning services,15801564000,233.345,0.164
+SEGD04,Apparel services other than laundry and dry cleaning,2601477000,279.839,0.027
+SEGD05,Financial services,23509644000,436.532,0.244
+SEGD09,Unsampled items,5684709000,,0.059
+SEGE,Miscellaneous personal goods,15223458000,85.961,0.158
+SEHA,Rent of primary residence,722536149000,428.151,7.499
+SEHB01,"Housing at school, excluding board",23413293000,657.610,0.243
+SEHB02,Other lodging away from home including hotels and motels,101072199000,353.109,1.049
+SEHC01,Owners' equivalent rent of primary residence,2416772133000,420.093,25.083
+SEHC09,Unsampled owners' equivalent rent of secondary residences,115428498000,,1.198
+SEHD,Tenants' and household insurance,39503910000,159.148,0.410
+SEHE01,Fuel oil,7129974000,341.794,0.074
+SEHE02,"Propane, kerosene, and firewood",6262815000,437.217,0.065
+SEHF01,Electricity,225750393000,276.700,2.343
+SEHF02,Utility (piped) gas service,72263250000,242.224,0.750
+SEHG01,Water and sewerage maintenance,71107038000,706.852,0.738
+SEHG02,Garbage and trash collection,32855691000,627.807,0.341
+SEHH01,Floor coverings,5684709000,128.102,0.059
+SEHH02,Window coverings,5299305000,81.053,0.055
+SEHH03,Other linens,12236577000,40.214,0.127
+SEHJ01,Bedroom furniture,24473154000,139.527,0.254
+SEHJ02,"Living room, kitchen, and dining room furniture",36709731000,106.202,0.381
+SEHJ03,Other furniture,13874544000,75.694,0.144
+SEHJ09,Unsampled furniture,867159000,,0.009
+SEHK01,Major appliances,6551868000,84.944,0.068
+SEHK02,Other appliances,13778193000,70.936,0.143
+SEHK09,Unsampled appliances,289053000,,0.003
+SEHL01,"Clocks, lamps, and decorator items",27556386000,39.307,0.286
+SEHL02,Indoor plants and flowers,10887663000,160.658,0.113
+SEHL03,Dishes and flatware,3564987000,43.740,0.037
+SEHL04,Nonelectric cookware and tableware,5299305000,77.567,0.055
+SEHM01,"Tools, hardware and supplies",23124240000,120.669,0.240
+SEHM02,Outdoor equipment and supplies,34879062000,105.304,0.362
+SEHM09,"Unsampled tools, hardware, outdoor equipment and supplies",22642485000,,0.235
+SEHN01,Household cleaning products,28905300000,151.360,0.300
+SEHN02,Household paper products,17150478000,234.213,0.178
+SEHN03,Miscellaneous household products,31699479000,140.408,0.329
+SEHP01,Domestic services,30061512000,228.318,0.312
+SEHP02,Gardening and lawncare services,32373936000,280.331,0.336
+SEHP03,"Moving, storage, freight expense",12236577000,203.157,0.127
+SEHP04,Repair of household items,16572372000,392.931,0.172
+SEHP09,Unsampled household operations,7997133000,,0.083
+SEMC01,Physicians' services,175744224000,423.860,1.824
+SEMC02,Dental services,90955344000,606.180,0.944
+SEMC03,Eyeglasses and eye care,32277585000,213.149,0.335
+SEMC04,Services by other medical professionals,57810600000,263.878,0.600
+SEMD01,Hospital services,186150132000,418.467,1.932
+SEMD02,Nursing homes and adult day services,15897915000,291.012,0.165
+SEMD03,Care of invalids and elderly at home,14934405000,170.763,0.155
+SEME,Health insurance,76406343000,144.482,0.793
+SEMF01,Prescription drugs,89124675000,558.744,0.925
+SEMF02,Nonprescription drugs,40660122000,110.076,0.422
+SEMG,Medical equipment and supplies,17343180000,109.867,0.180
+SERA01,Televisions,8767941000,1.027,0.091
+SERA02,"Cable, satellite, and live streaming television service",62917203000,580.616,0.653
+SERA03,Other video equipment,2697828000,8.007,0.028
+SERA04,"Purchase, subscription, and rental of video",15030756000,76.335,0.156
+SERA05,Audio equipment,5106603000,24.174,0.053
+SERA06,Recorded music and music subscriptions,7226325000,87.310,0.075
+SERA09,Unsampled video and audio,481755000,,0.005
+SERB01,Pets and pet products,60893832000,238.711,0.632
+SERB02,Pet services including veterinary,51066030000,350.192,0.530
+SERC01,Sports vehicles including bicycles,23124240000,169.110,0.240
+SERC02,Sports equipment,21582624000,83.351,0.224
+SERC09,Unsampled sporting goods,1541616000,,0.016
+SERD01,Photographic equipment and supplies,1830669000,66.981,0.019
+SERD02,Photographers and photo processing,5299305000,131.756,0.055
+SERD09,Unsampled photography,0,,0.000
+SERE01,Toys,27460035000,27.092,0.285
+SERE02,"Sewing machines, fabric and supplies",2216073000,107.075,0.023
+SERE03,Music instruments and accessories,4239444000,124.167,0.044
+SERE09,Unsampled recreation commodities,1348914000,,0.014
+SERF01,"Club membership for shopping clubs, fraternal, or other organizations, or participant sports fees",78718767000,167.395,0.817
+SERF02,Admissions,71107038000,467.948,0.738
+SERF03,Fees for lessons or instructions,16186968000,402.090,0.168
+SERF09,Unsampled recreation services,31603128000,,0.328
+SERG01,Newspapers and magazines,5106603000,222.190,0.053
+SERG02,Recreational books,4335795000,97.433,0.045
+SERG09,Unsampled recreational reading materials,0,,0.000
+SETA01,New vehicles,423269943000,177.552,4.393
+SETA02,Used cars and trucks,230375241000,180.317,2.391
+SETA03,Leased cars and trucks,38251347000,115.627,0.397
+SETA04,Car and truck rental,12525630000,151.989,0.130
+SETA09,Unsampled new and used motor vehicles,13103736000,,0.136
+SETB01,Gasoline (all types),279610602000,270.667,2.902
+SETB02,Other motor fuels,7804431000,260.056,0.081
+SETC01,Tires,28616247000,153.774,0.297
+SETC02,Vehicle accessories other than tires,6262815000,220.338,0.065
+SETD01,Motor vehicle body work,5202954000,428.545,0.054
+SETD02,Motor vehicle maintenance and servicing,48946308000,357.139,0.508
+SETD03,Motor vehicle repair,38058645000,277.058,0.395
+SETD09,Unsampled service policies,5973762000,,0.062
+SETE,Motor vehicle insurance,269397396000,868.417,2.796
+SETF01,State motor vehicle registration and license fees,27363684000,199.233,0.284
+SETF03,Parking and other fees,19077498000,229.312,0.198
+SETF09,Unsampled motor vehicle fees,1252563000,,0.013
+SETG01,Airline fares,88450218000,262.556,0.918
+SETG02,Other intercity transportation,21486273000,162.184,0.223
+SETG03,Intracity transportation,31025022000,344.423,0.322
+SETG09,Unsampled public transportation,385404000,,0.004
